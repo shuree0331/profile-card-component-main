@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+ }
+
+ /* For desktop screen */
+ @media screen and (max-width: 1440px) {
+     body {
+        background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+        background-position: top -400px left -150px, right -150px bottom -500px;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-color: hsl(185, 75%, 39%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .box {
+        background-color: white;
+        width: 350px;
+        border-radius: 20px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    figure {
+        background-image: url('./images/bg-pattern-card.svg');
+        margin: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 140px;
+        
+    }
+
+    img {
+        margin-top: 85px;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+
+    h1 {
+        font-weight: normal;
+        color: hsl(0, 0%, 59%);
+        font-size: 20px;
+        margin-top: 60px;
+        letter-spacing: 1px;
+    }
+
+    strong {
+        color: #454242;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 0px;
+        color: #454242;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 30px;
+        color:  hsl(0, 0%, 59%);
+    }
+
+    footer {
+        position: absolute;
+        width: inherit;
+        margin-top: 1%;
+    }
+}
+
+/* For mobile device */
+@media screen and (max-width: 375px) {
+    body {
+        background-size: 120%;
+        background-position: left 350% top -30%, right 340% bottom -30%;
+    }
+    
+    .box {
+        width: 320px;
+    }
+}
